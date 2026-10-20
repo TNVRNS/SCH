@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Oleksandr</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+    .profile-subtitle {
+        letter-spacing: 1px;
+        font-style: italic;
+    }
+</style>
+
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1 style="text-transform: uppercase;">Oleksandr</h1>
+        <p class="profile-subtitle">Student | Cybersecurity</p>
+
+        <p>
+            Email:
+            <a href="mailto:olexolexsav@gmail.com">
+                olexolexsav@gmail.com
+            </a>
+        </p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/TNVRNS" target="_blank">
+                GitHub Profile
+            </a>
+        </p>
+        <button
+            type="button"
+            id="theme-toggle"
+            class="theme-toggle"
+        >
+            Switch to dark mode
+        </button>
+    </header>
+
+    <main>
+
+        <section class="cv-section">
+            <h2>About Me</h2>
+
+            <p>
+            Motivated and responsible professional with strong communication and teamwork skills. 
+            </p>
+
+            <p>
+            Quick learner with a proactive approach and a strong desire to develop professionally.
+            </p>
+        </section>
+
+
+        <section class="cv-section">
+            <h2>Education</h2>
+
+            <article>
+                <h3>LPNU</h3>
+                <p>Cybersecurity</p>
+                <p>Lviv, Ukraine</p>
+            </article>
+        </section>
+
+
+        <section class="cv-section">
+            <h2>Skills</h2>
+
+            <ul>
+                <li>Python</li>
+                <li>Cryptography</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>Git</li>
+                <li>Cybersecurity</li>
+            </ul>
+        </section>
+
+
+        <section class="cv-section" id="experience-section">
+            <h2>Programming Experience</h2>
+
+            <article>
+                <h3>Programming Projects</h3>
+                    <li>Development of Telegram bots</li>
+                    <li>Development of mobile applications</li>
+                    <li>Development of automation scripts</li>
+                    <li>Working with APIs and external services</li>
+                    <li>Identifying and analyzing software vulnerabilities</li>
+                    <li>Web application development</li>
+                    <li>Working with Git and GitHub</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="cv-section" id="reviews-section">
+            <h2>Employer Reviews</h2>
+            <p id="reviews-status">Loading reviews...</p>
+            <div id="reviews-list"></div>
+        </section>
+
+
+        <section class="cv-section">
+            <h2>Languages</h2>
+
+            <ul>
+                <li>Ukrainian — Native</li>
+                <li>English — Fluent</li>
+                <li>Russian — Fluent</li>
+                <li>German — Advanced</li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2>Interests</h2>
+
+            <ul>
+                <li>Web Development</li>
+                <li>Programming</li>
+                <li>Football</li>
+                <li>Basketball</li>
+                <li>Baseball</li>
+                <li>Sport Poker</li>
+                <li>Web3</li>
+                <li>Crypto</li>
+            </ul>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 Oleksandr. All rights reserved.</p>
+
+        <div id="system-info"></div>
+            <h3>System Information</h3>
+        </div>    
+        
+    </footer>
+    
+    <div id="contact-modal" class="modal-overlay" hidden>
+        <div
+            class="modal-content"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="contact-title"
+        >
+            <button
+                type="button"
+                id="close-modal"
+                class="close-button"
+                aria-label="Close feedback form"
+            >
+                &times;
+            </button>
+
+            <h2 id="contact-title">Contact Me</h2>
+            <p>Thank you for visiting! Leave me a message.</p>
+
+            <form
+                id="contact-form"
+                action="https://formspree.io/f/xgaobzgb"
+                method="POST"
+            >
+                <label for="contact-name">Name</label>
+                <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                >
+
+                <label for="contact-email">Email</label>
+                <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    placeholder="your@email.com"
+                    required
+                >
+
+                <label for="contact-phone">Phone number</label>
+                <input
+                    type="tel"
+                    id="contact-phone"
+                    name="phone"
+                    placeholder="+380..."
+                    required
+                >
+
+                <label for="contact-message">Message</label>
+                <textarea
+                    id="contact-message"
+                    name="message"
+                    rows="4"
+                    placeholder="Write your message..."
+                    required
+                ></textarea>
+
+                <button type="submit" class="submit-button">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
